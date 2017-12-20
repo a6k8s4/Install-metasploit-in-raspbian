@@ -6,6 +6,8 @@ Install METASPLOIT in Raspberry pi 3/Zero with raspbian
 
 * Raspberry pi (3 or Zero )
 * Micro SD card flashed with Raspbian OS [download raspbian](https://www.raspberrypi.org/downloads/raspbian/ )
+* HDMI cable, key board and mouse (not require for headless setup)
+* Internet connection(ethernet or wifi)
 * Power supply to Raspberry pi
 
 # Process
