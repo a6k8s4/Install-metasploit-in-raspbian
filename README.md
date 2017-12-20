@@ -5,7 +5,7 @@ Install METASPLOIT in Raspberry pi 3/Zero with raspbian
 # Requirements
 
 * Raspberry pi (3 or Zero )
-* Micro SD card flashed with Raspbian OS (https://www.raspberrypi.org/downloads/raspbian/ )
+* Micro SD card flashed with Raspbian OS [download raspbian](https://www.raspberrypi.org/downloads/raspbian/ )
 * Power supply to Raspberry pi
 
 # Process
@@ -26,6 +26,30 @@ sudo apt-get upgrade
 sudo apt-get install build-essential libreadline-dev libssl-dev libpq5 libpq-dev libreadline5 libsqlite3-dev libpcap-dev subversion git-core autoconf postgresql pgadmin3 curl zlib1g-dev libxml2-dev libxslt1-dev libyaml-dev nmap
  ```
  * Enter the below command to add the build repository and install the Metasploit Framework package
- ```
-sudo curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall ```
+ ```sudo curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall```
+ 
+ * It will take 15 mins(according to internet speed, so take a break). After the installation completes, open the terminal and type the below to start Metasploit console.
+ ```./msfconsole```
+ 
+ Or
+ 
+ ```msfconsole```
+ 
+ * It will ask you to set up new database, Type y or yes to continue.
+ 
+ 
+ * BOOM ... Now you setted up Metasploit completely & you are in msf console..
+ 
+ * To check the database status type the below command in msf console.
+ 
+ ```db_status```
+ 
+ * If everything goes perfect, you will see this:
+ 
+``` [*] postgresql connected to msf```
 
+* ENJOY....
+
++
+ 
+ 
